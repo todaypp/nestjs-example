@@ -30,7 +30,7 @@ module.exports = {
     'plugin:jest/recommended',
 
     // Custom order
-    'airbnb-base',
+    'airbnb-typescript/base',
     'prettier',
     'prettier/@typescript-eslint', // Last
     'plugin:prettier/recommended', // Last
@@ -58,6 +58,7 @@ module.exports = {
 
     // Collisions with nestjs
     'class-methods-use-this': 0,
+    'import/prefer-default-export': 0,
     'no-empty-function': 0,
     'no-unused-vars': 0,
     'no-useless-constructor': 0,

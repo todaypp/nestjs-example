@@ -6,7 +6,7 @@ import UpdateCatDto from './dto/update-cat.dto';
 @Injectable()
 export default class CatsService {
   create(createCatDto: CreateCatDto) {
-    return 'This action adds a new cat';
+    return `This action adds a new cat ${JSON.stringify(createCatDto)}`;
   }
 
   findAll() {
@@ -18,7 +18,7 @@ export default class CatsService {
   }
 
   update(id: number, updateCatDto: UpdateCatDto) {
-    return `This action updates a #${id} cat`;
+    return `This action updates a #${id} cat ${JSON.stringify(updateCatDto)}`;
   }
 
   remove(id: number) {
