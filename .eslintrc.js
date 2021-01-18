@@ -40,6 +40,7 @@ module.exports = {
     '@typescript-eslint/explicit-module-boundary-types': 0,
     '@typescript-eslint/interface-name-prefix': 0,
     '@typescript-eslint/no-explicit-any': 0,
+    'import/extensions': [2, 'ignorePackages', { 'ts': 'never' }],
     'no-console': 0, // TODO: add a logger
     'prettier/prettier': [
       2,
