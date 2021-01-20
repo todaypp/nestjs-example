@@ -1,1 +1,1 @@
-export default class CreateCatDto {}
+export class CreateCatDto {}

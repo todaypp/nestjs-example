@@ -1,14 +1,14 @@
 /* eslint-disable @typescript-eslint/no-unused-expressions */
 /* eslint-disable consistent-return */
 /* eslint-disable no-nested-ternary */
-import { INestApplicationContext } from '@nestjs/common';
-import { isFunction, isNil } from '@nestjs/common/utils/shared.utils';
 import { AbstractWsAdapter, MessageMappingProperties } from '@nestjs/websockets';
-import { DISCONNECT_EVENT } from '@nestjs/websockets/constants';
-import { fromEvent, Observable } from 'rxjs';
-import { filter, first, map, mergeMap, share, takeUntil } from 'rxjs/operators';
-import { Server } from 'socket.io';
 import { CustomOrigin } from '@nestjs/common/interfaces/external/cors-options.interface';
+import { DISCONNECT_EVENT } from '@nestjs/websockets/constants';
+import { INestApplicationContext } from '@nestjs/common';
+import { Server } from 'socket.io';
+import { filter, first, map, mergeMap, share, takeUntil } from 'rxjs/operators';
+import { fromEvent, Observable } from 'rxjs';
+import { isFunction, isNil } from '@nestjs/common/utils/shared.utils';
 
 // TODO: Using this until socket.io v3 is part of Nest.js, see: https://github.com/nestjs/nest/issues/5676
 export class SocketIoAdapter extends AbstractWsAdapter {

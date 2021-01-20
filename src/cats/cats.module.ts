@@ -1,10 +1,10 @@
 import { Module } from '@nestjs/common';
 
-import CatsController from './cats.controller';
-import CatsService from './cats.service';
+import { CatsController } from './cats.controller';
+import { CatsService } from './cats.service';
 
 @Module({
   controllers: [CatsController],
   providers: [CatsService],
 })
-export default class CatsModule {}
+export class CatsModule {}

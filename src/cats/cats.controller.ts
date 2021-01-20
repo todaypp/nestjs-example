@@ -1,11 +1,11 @@
 import { Body, Controller, Delete, Get, Param, Post, Put } from '@nestjs/common';
 
-import CatsService from './cats.service';
-import CreateCatDto from './dto/create-cat.dto';
-import UpdateCatDto from './dto/update-cat.dto';
+import { CatsService } from './cats.service';
+import { CreateCatDto } from './dto/create-cat.dto';
+import { UpdateCatDto } from './dto/update-cat.dto';
 
 @Controller('cats')
-export default class CatsController {
+export class CatsController {
   constructor(private readonly catsService: CatsService) {}
 
   @Post()

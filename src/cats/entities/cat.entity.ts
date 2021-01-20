@@ -1,1 +1,1 @@
-export default class Cat {}
+export class Cat {}
