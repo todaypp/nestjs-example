@@ -69,5 +69,8 @@ module.exports = {
     'no-empty-function': 0,
     'no-unused-vars': 0,
     'no-useless-constructor': 0,
+
+    // Collisions with supertest
+    'jest/no-done-callback': 0,
   },
 };
